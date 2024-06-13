@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    clip-path: circle(40% at bottom right);
+
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    position: relative;
+    max-width: 150px;
+}
+
+header .navegation ul {
+    position: relative;
+    display: flex;
+}
+
+header .navegation li {
+    list-style: none;
+}
+
+header .navegation li a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 19px;
+    margin-left: 100px;
+
+}
+
+.contanier {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contanier .text {
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.contanier .text {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+
+}
+
+.contanier .text h2 span {
+    font-size: 3em;
+    color: red;
+
+}
+
+.contanier .text p {
+    color: white;
+    font-size: 90%;
+
+}
+
+.contanier .text a {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 25px;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+
+}
+
+.contanier .text a:hover {
+    transform: translateY(-10px);
+}
+
+.icons {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icons li a {
+    list-style: none;
+}
+
+.icons li a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 48%;
+    background-color: #3a3a3a;
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.icons li a:hover {
+    background-color: blue;
+    transform: translateY(-10px);
+}
+
+.icons li a img {
+    transform: scale(0, 5);
+    filter: invert(1);
+}
